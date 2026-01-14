@@ -1,0 +1,14 @@
+1. Создание очереди (через вкладку Exec в Docker Desktop):
+
+kafka-topics --bootstrap-server localhost:9094 --create --topic practice2topic --partitions 3 --replication-factor 2
+
+2. Информация об очереди:
+
+kafka-topics --describe --topic practice2topic --bootstrap-server localhost:9094
+
+Вывод:
+
+Topic: practice2topic   TopicId: My1nXSnvT_OCr5_2kVe-jA PartitionCount: 3       ReplicationFactor: 2    Configs: 
+        Topic: practice2topic   Partition: 0    Leader: 2       Replicas: 2,3   Isr: 2,3
+        Topic: practice2topic   Partition: 1    Leader: 3       Replicas: 3,1   Isr: 3,1
+        Topic: practice2topic   Partition: 2    Leader: 1       Replicas: 1,2   Isr: 1,2
