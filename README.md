@@ -4,4 +4,4 @@
 
 Запуск кластера apache kafka, продюсера и консьюмеров:
 
-docker compose up -d
+docker compose up --build --detach
