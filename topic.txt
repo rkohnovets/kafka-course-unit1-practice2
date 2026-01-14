@@ -1,4 +1,4 @@
-1. Создание очереди (через вкладку Exec в Docker Desktop):
+1. Создание очереди (если через вкладку Exec в Docker Desktop) (но при старте docker compose сейчас автоматически запускается идентичный скрипт):
 
 kafka-topics --bootstrap-server localhost:9094 --create --topic practice2topic --partitions 3 --replication-factor 2
 
